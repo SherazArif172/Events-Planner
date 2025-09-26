@@ -9,7 +9,7 @@ export interface EventPayload {
 
 export const eventsApi = createApi({
   reducerPath: 'eventsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000' }),
   tagTypes: ['Events'],
   endpoints: (builder) => ({
     getEvents: builder.query<any[], { category?: 'work' | 'personal' } | void>({
