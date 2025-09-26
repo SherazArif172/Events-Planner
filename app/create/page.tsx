@@ -28,7 +28,7 @@ export default function CreateEventPage() {
 
   const { data: eventToEdit } = useGetEventQuery(editId!, { skip: !isEditMode })
 
-  // Load event data for editing
+ 
   useEffect(() => {
     if (isEditMode && eventToEdit) {
       setFormData({
@@ -88,7 +88,7 @@ export default function CreateEventPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
+    
       <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -111,7 +111,7 @@ export default function CreateEventPage() {
         </div>
       </nav>
 
-      {/* Header */}
+      
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-2xl">
           <h1 className="text-4xl font-bold mb-4 text-center">
@@ -126,7 +126,6 @@ export default function CreateEventPage() {
         </div>
       </section>
 
-      {/* Create/Edit Event Form */}
       <section className="pb-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-2xl">
           <Card>

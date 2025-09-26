@@ -54,7 +54,7 @@ export default function AllEventsPage() {
     selectedCategory === 'All' ? undefined : { category: selectedCategory as 'work' | 'personal' }
   )
 
-  // Filter events based on selected category
+
   const filteredEvents = events
 
   const formatDate = (dateString: string) => {
@@ -92,7 +92,7 @@ export default function AllEventsPage() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Header */}
+      
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-4">All Events</h1>
@@ -100,7 +100,7 @@ export default function AllEventsPage() {
             Discover and manage all your upcoming events in one place.
           </p>
           
-          {/* Filter Buttons */}
+          
           <div className="flex gap-2 mb-8">
             <Button
               variant={selectedCategory === "All" ? "default" : "outline"}
@@ -124,7 +124,7 @@ export default function AllEventsPage() {
         </div>
       </section>
 
-      {/* Events Grid */}
+      
       <section className="pb-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -178,7 +178,7 @@ export default function AllEventsPage() {
         </div>
       </section>
 
-      {/* Event Details Modal */}
+      
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
         <DialogContent className="sm:max-w-[500px]">
           <DialogHeader>
